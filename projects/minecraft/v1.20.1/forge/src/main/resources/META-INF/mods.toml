@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[${forge_loader_version},)"
+license = "All rights reserved"
+issueTrackerURL = "https://github.com/BlueAgent/Glitchify/issues"
+
+[[mods]]
+modId = "glitchify"
+version = "${mod_version}"
+displayName = "Glitchify"
+displayURL = "https://github.com/BlueAgent/Glitchify"
+logoFile = "assets/glitchify/logo.png"
+credits = "https://github.com/BlueAgent/Glitchify/graphs/contributors"
+authors = "BlueAgent"
+description = '''
+Stuff for my squish Glitchtress.
+'''
+displayTest="IGNORE_ALL_VERSION"
+
+[[dependencies.glitchify]]
+modId = "forge"
+mandatory = true
+versionRange = "[${forge_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.glitchify]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[${minecraft_version},)"
+ordering = "NONE"
+side = "BOTH"

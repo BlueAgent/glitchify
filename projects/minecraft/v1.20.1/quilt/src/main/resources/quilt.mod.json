@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "glitchify",
+    "id": "glitchify",
+    "version": "${mod_version}",
+    "metadata": {
+      "name": "Glitchify",
+      "description": "Stuff for my squish Glitchtress.",
+      "contributors": {
+        "BlueAgent": "Owner"
+      },
+      "contact": {
+        "homepage": "https://github.com/BlueAgent/Glitchify",
+        "issues": "https://github.com/BlueAgent/Glitchify/issues",
+        "sources": "https://github.com/BlueAgent/Glitchify"
+      },
+      "icon": "assets/glitchify/logo.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": "glitchify.quilt.GlitchifyQuilt"
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "versions": "*"
+      },
+      {
+        "id": "quilted_fabric_api",
+        "versions": "*"
+      },
+      {
+        "id": "minecraft",
+        "versions": "*"
+      }
+    ]
+  },
+  "mixin": [
+    "glitchify-vanilla.mixins.json"
+  ]
+}
