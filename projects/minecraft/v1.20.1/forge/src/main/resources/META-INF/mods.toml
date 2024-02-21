@@ -14,7 +14,7 @@ authors = "BlueAgent"
 description = '''
 Stuff for my squish Glitchtress.
 '''
-displayTest="IGNORE_ALL_VERSION"
+displayTest = "IGNORE_ALL_VERSION"
 
 [[dependencies.glitchify]]
 modId = "forge"

@@ -2,4 +2,4 @@
 
 ## [NEXT] - YYYY-MM-DD
 
-- Placeholder
+- Added an option for FTB Quests to only allow the team owner to submit tasks.
