@@ -1,10 +1,7 @@
 # Glitchify
 
-This mod tweaks various things that my friends and I wanted to.
-
-There are no configs right now but might add them or just make the project open source at some point.
+Stuff for my squish Glitchtress.
 
 ## Changes
 
-- [1.19.2](./projects/minecraft/v1.19.2/changes.md)
-- [1.12.2 Forge](./projects/minecraft/v1.12.2/forge/changes.md)
+- [1.20.1](./projects/minecraft/v1.20.1/changes.md)
