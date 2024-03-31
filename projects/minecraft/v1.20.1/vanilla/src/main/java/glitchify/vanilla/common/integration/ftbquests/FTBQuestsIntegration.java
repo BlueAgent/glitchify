@@ -1,4 +1,4 @@
-package glitchify.vanilla.common.integration.ftbteams;
+package glitchify.vanilla.common.integration.ftbquests;
 
 import dev.ftb.mods.ftbteams.api.event.TeamEvent;
 import dev.ftb.mods.ftbteams.api.property.BooleanProperty;

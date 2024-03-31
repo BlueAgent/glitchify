@@ -3,7 +3,7 @@ package glitchify.vanilla;
 import dev.ftb.mods.ftbteams.api.FTBTeamsAPI;
 import dev.ftb.mods.ftbteams.api.Team;
 import dev.ftb.mods.ftbteams.api.TeamRank;
-import glitchify.vanilla.common.integration.ftbteams.FTBQuestsIntegration;
+import glitchify.vanilla.common.integration.ftbquests.FTBQuestsIntegration;
 import net.minecraft.server.level.ServerPlayer;
 
 public class MixinHooks {

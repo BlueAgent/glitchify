@@ -1,6 +1,6 @@
 package glitchify;
 
-import glitchify.vanilla.common.integration.ftbteams.FTBQuestsIntegration;
+import glitchify.vanilla.common.integration.ftbquests.FTBQuestsIntegration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
