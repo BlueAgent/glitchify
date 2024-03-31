@@ -1,7 +1,9 @@
 package glitchify.forge;
 
 import glitchify.Glitchify;
-import glitchify.forge.client.GlitchifyForgeClient;
+import glitchify.core.api.common.CoreCommonService;
+import glitchify.forge.client.GlitchifyClientForge;
+import glitchify.forge.common.GameCommonServiceForge;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,16 +17,14 @@ public class GlitchifyForge extends Glitchify {
     public static GlitchifyForge INSTANCE;
 
     public GlitchifyForge() {
-        if (INSTANCE != null) {
-            throw new RuntimeException("Expected only one GlitchifyForge to be instantiated.");
-        }
-
+        super(new GameCommonServiceForge());
         INSTANCE = this;
+        CoreCommonService.INSTANCE.init();
         LOGGER.info(Glitchify.NAME + " is on Forge.");
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
 
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> GlitchifyForgeClient.INSTANCE.registerEvents(modEventBus, forgeEventBus));
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> GlitchifyClientForge.INSTANCE.registerEvents(modEventBus, forgeEventBus));
     }
 
     @Override

@@ -53,6 +53,8 @@ configurations {
 dependencies {
     modImplementation("org.quiltmc:quilt-loader:${quilt_loader_version}")
     modApi("org.quiltmc.quilted-fabric-api:quilted-fabric-api:${quilted_fabric_api_version}-${minecraft_version}")
+    "common"(project(path = ":projects:core", configuration = "shadow"))
+    "shadowCommon"(project(path = ":projects:core", configuration = "shadow"))
     "common"(project(path = vanillaPath, configuration = "namedElements")) { isTransitive = false }
     "shadowCommon"(project(path = vanillaPath, configuration = "transformProductionQuilt")) { isTransitive = false }
     "common"(project(path = quiltishPath, configuration = "namedElements")) { isTransitive = false }

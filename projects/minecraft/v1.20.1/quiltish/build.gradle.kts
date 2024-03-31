@@ -24,6 +24,7 @@ loom {
 dependencies {
     modImplementation("org.quiltmc:quilt-loader:${quilt_loader_version}")
     modApi("org.quiltmc.quilted-fabric-api:quilted-fabric-api:${quilted_fabric_api_version}-${minecraft_version}")
+    compileOnly(project(path = ":projects:core", configuration = "shadow"))
     compileOnly(project(path = vanillaPath, configuration = "namedElements")) { isTransitive = false }
     modCompileOnly("dev.emi:trinkets:${trinkets_version}")
     modCompileOnly("dev.ftb.mods:ftb-quests:${ftb_quests_version}")

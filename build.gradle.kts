@@ -38,5 +38,18 @@ allprojects {
                 includeGroupByRegex("""^dev\.ftb(?:\..+$|$)""")
             }
         }
+        mavenCentral {
+            content {
+                includeGroup("com.google.code.findbugs")
+                includeGroup("com.google.guava")
+                includeGroup("org.apache")
+                includeGroup("org.apache.commons")
+                includeGroup("org.apache.logging")
+                includeGroup("org.apache.logging.log4j")
+                includeGroup("org.jetbrains")
+                includeGroup("org.slf4j")
+                includeGroup("org.sonatype.oss")
+            }
+        }
     }
 }

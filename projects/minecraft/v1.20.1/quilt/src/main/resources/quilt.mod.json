@@ -19,7 +19,8 @@
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {
-      "init": "glitchify.quilt.GlitchifyQuilt"
+      "init": "glitchify.quilt.GlitchifyQuilt",
+      "client_init": "glitchify.quilt.client.GlitchifyClientQuilt"
     },
     "depends": [
       {

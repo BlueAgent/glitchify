@@ -80,6 +80,8 @@ pluginManagement {
 
 rootProject.name = "glitchify"
 
+include("projects:core")
+
 include("projects:minecraft:v1.20.1")
 include("projects:minecraft:v1.20.1:vanilla")
 include("projects:minecraft:v1.20.1:quiltish")

@@ -15,7 +15,9 @@ loom {
 }
 
 dependencies {
+    implementation(project(path = ":projects:core", configuration = "shadow"))
     modImplementation("org.quiltmc:quilt-loader:${quilt_loader_version}")
+    compileOnly(project(path = ":projects:core", configuration = "shadow"))
     modCompileOnly("dev.emi:trinkets:${trinkets_version}")
     modCompileOnly("top.theillusivec4.curios:curios-forge:${curios_version}:api")
     modCompileOnly("dev.ftb.mods:ftb-quests:${ftb_quests_version}")

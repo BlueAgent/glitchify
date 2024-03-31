@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "glitchify.fabric.GlitchifyFabric"
+    ],
+    "client": [
+      "glitchify.fabric.client.GlitchifyClientFabric"
     ]
   },
   "mixins": [

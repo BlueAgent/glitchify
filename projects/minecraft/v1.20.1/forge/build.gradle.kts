@@ -57,6 +57,8 @@ configurations {
 
 dependencies {
     forge("net.minecraftforge:forge:${minecraft_version}-${forge_version}")
+    "common"(project(path = ":projects:core", configuration = "shadow"))
+    "shadowCommon"(project(path = ":projects:core", configuration = "shadow"))
     "common"(project(path = vanillaPath, configuration = "namedElements")) { isTransitive = false }
     "shadowCommon"(project(path = vanillaPath, configuration = "transformProductionForge")) { isTransitive = false }
     modRuntimeOnly("top.theillusivec4.curios:curios-forge:${curios_version}")

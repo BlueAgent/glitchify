@@ -53,6 +53,8 @@ configurations {
 dependencies {
     modImplementation("net.fabricmc:fabric-loader:${fabric_loader_version}")
     modApi("net.fabricmc.fabric-api:fabric-api:${fabric_api_version}")
+    "common"(project(path = ":projects:core", configuration = "shadow"))
+    "shadowCommon"(project(path = ":projects:core", configuration = "shadow"))
     "common"(project(path = vanillaPath, configuration = "namedElements")) { isTransitive = false }
     "shadowCommon"(project(path = vanillaPath, configuration = "transformProductionFabric")) { isTransitive = false }
     "common"(project(path = quiltishPath, configuration = "namedElements")) { isTransitive = false }
